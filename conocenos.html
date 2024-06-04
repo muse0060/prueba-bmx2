@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping</title>
+    <link rel="stylesheet" href="styles.css">
+<script defer src="menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+               <nav id="navbar">
+            <ul>
+                
+                <li class="active"><a href="Empresa digital JAZ.html">Inicio</a></li>
+                <li><a href="shoping.html">Shoping</a></li>
+                <li><a href="pedidos.html">Mis Pedidos</a></li>
+                <li><a href="conocenos.html">Nosotros</a></li>
+  		<li><a href="contacto.html">Contacto</a></li>
+		<li><button id="hamburguesa">☰</button></li>
+            </ul>
+        </nav>
+    </header>
+
+ 
+            </ul>
+        </nav>
+    </header>
+<div class="caja-index post-navbar">
+    <section id="conocenos" class="about">
+           <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa digital que se especializa en BMX</p>
+            <p>Nuestro equipo está formado por expertos en BMX.</p>
+            <div class="team-members">
+                <div class="member">
+                    <img src="biker.jpg" alt="Miembro del Equipo">
+                    <h3>Nombre del Miembro: Fernando de Leon Avecilla</h3>
+                    <p>Soy Fernando, especialista en BMX, técnico, consultor y ciclista. Servir es mi pasión.</p>
+                </div>
+                <!-- Repite esto para cada miembro del equipo -->
+            </div>
+        </div>
+    </section>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MHDeL7YLj-c?si=CO0RXAd8hp0p4HqH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JAZ_BMX. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- Agrega un formulario con el id 'registro-form' -->
+    <form id="registro-form">
+        <!-- Agrega aquí los campos del formulario si es necesario -->
+    </form>
+
+    <script>
+        // Verifica si existe el elemento con id 'registro-form' antes de agregar el evento
+        if (document.getElementById('registro-form')) {
+            document.getElementById('registro-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevenir el envío del formulario
+                // Redirigir a la página de shopping
+                window.location.href = 'productos.html';
+            });
+        }
+    </script>
+
+</body>
+</html>
+
+

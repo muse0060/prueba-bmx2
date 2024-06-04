@@ -1,0 +1,142 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    font-weight: bold;
+}
+.hero {
+    max-height: 250px;
+    transition: max-height .3s ease;
+}
+.hero.cerrado {
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+.hero {
+    background-color: #222;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member {
+    margin: 20px;
+    text-align: center;
+}
+
+.member img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top:3000px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+/* Estilos para el logo */
+.logo-container {
+    padding: 0 20px;
+}
+
+.logo-container img {
+    width: 50px; /* Ajusta el tamaño del logo según lo necesites */
+
+}
+
+
+
+#hamburguesa {
+    border-style: none;
+    background-color: #333;
+    color: white;
+
+}
+
+#hamburguesa:hover {
+    background-color: #9e9caf;
+    color: black;
+    border-radius: 15px;
+}

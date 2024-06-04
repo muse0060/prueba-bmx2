@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de BMX - JAZ_BMX</title>
+<script defer src="menu.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Estilos para la disposición de los productos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header .logo-container {
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .listaProductos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .producto {
+            flex: 0 0 calc(33.33% - 20px);
+            max-width: calc(33.33% - 20px);
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            cursor: pointer; /* Cursor cambia a puntero al pasar sobre el producto */
+        }
+
+        .producto img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h3, h4, ul, p {
+            margin: 10px 0;
+            padding: 0;
+        }
+
+        .precio {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                
+                <li class="active"><a href="Empresa digital JAZ.html">Inicio</a></li>
+                <li><a href="shoping.html">Shoping</a></li>
+                <li><a href="pedidos.html">Mis Pedidos</a></li>
+                <li><a href="conocenos.html">Nosotros</a></li>
+  		<li><a href="contacto.html">Contacto</a></li>
+		<li><button id="hamburguesa">☰</button></li>
+            </ul>
+        </nav>
+    </header>
+<div class="caja-index post-navbar">
+ 
+    <section id="inicio" class="hero">
+
+<div class="seccionProducto">
+    <h2>Productos de BMX</h2>
+    <div class="listaProductos">
+        <!-- Producto 1 -->
+        <div class="producto" onclick="mostrarDetalle(this)">
+            <img src="imagen1.jpg" alt="Bicicleta BMX Haro Downtown 20.5">
+            <h3>Bicicleta BMX Haro Downtown 20.5"</h3>
+            <h4>Características</h4>
+            <ul>
+                <li>Cuadro de acero Hi-Ten</li>
+                <li>Horquilla de acero Hi-Ten</li>
+                <li>Frenos de aluminio U-brake</li>
+                <li>Manillar de 8.75" de altura</li>
+            </ul>
+            <p class="precio"><b>Precio: </b>$300.00</p>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="producto" onclick="mostrarDetalle(this)">
+            <img src="imagen2.jpg" alt="Bicicleta BMX GT Performer 20.5">
+            <h3>Bicicleta BMX GT Performer 20.5"</h3>
+            <h4>Características</h4>
+            <ul>
+                <li>Cuadro de acero</li>
+                <li>Horquilla de acero</li>
+                <li>Manillar de 9" de altura</li>
+                <li>Ruedas de 20 pulgadas</li>
+            </ul>
+            <p class="precio"><b>Precio: </b>$320.00</p>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto" onclick="mostrarDetalle(this)">
+            <img src="imagen3.jpg" alt="Bicicleta BMX Mongoose Legion L100 20">
+            <h3>Bicicleta BMX Mongoose Legion L100 20"</h3>
+            <h4>Características</h4>
+            <ul>
+                <li>Cuadro de acero Hi-Ten</li>
+                <li>Horquilla de acero</li>
+                <li>Frenos de aleación de aluminio</li>
+                <li>Llantas de aluminio de doble pared</li>
+            </ul>
+            <p class="precio"><b>Precio: </b>$349.99</p>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto" onclick="mostrarDetalle(this)">
+            <img src="imagen4.jpg" alt="Bicicleta BMX Sunday Soundwave 20.75">
+            <h3>Bicicleta BMX Sunday Soundwave 20.75"</h3>
+            <h4>Características</h4>
+            <ul>
+                <li>Cuadro de cromo</li>
+                <li>Horquilla de cromo</li>
+                <li>Manillar de 9" de altura</li>
+                <li>Ruedas de 20 pulgadas</li>
+            </ul>
+            <p class="precio"><b>Precio: </b>$379.99</p>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="producto" onclick="mostrarDetalle(this)">
+            <img src="imagen5.jpg" alt="Bicicleta BMX WeThePeople Justice 20.75">
+            <h3>Bicicleta BMX WeThePeople Justice 20.75"</h3>
+            <h4>Características</h4>
+            <ul>
+                <li>Cuadro de cromo</li>
+                <li>Horquilla de cromo</li>
+                <li>Manillar de 9" de altura</li>
+                <li>Ruedas de 20 pulgadas</li>
+            </ul>
+            <p class="precio"><b>Precio: </b>$399.99</p>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="producto" onclick="mostrarDetalle(this)">
+            <img src="imagen6.jpg" alt="Bicicleta BMX Fitbikeco PRK">
+            <h3>Bicicleta BMX Fitbikeco PRK</h3>
+            <h4>Características</h4>
+            <ul>
+                <li>Cuadro de acero cromoly</li>
+                <li>Horquilla de acero cromoly</li>
+                <li>Frenos de aleación de aluminio</li>
+                <li>Manillar de 9" de altura</li>
+            </ul>
+            <p class="precio"><b>Precio: </b>$429.99</p>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="producto" onclick="mostrarDetalle(this)">
+            <img src="imagen7.jpg" alt="Bicicleta BMX Cult Devotion 2022">
+            <h3>Bicicleta BMX Cult Devotion 2022</h3>
+            <h4>Características</h4>
+            <ul>
+                <li>Cuadro de acero cromoly</li>
+                <li>Horquilla de acero cromoly</li>
+                <li>Manillar de 9" de altura</li>
+                <li>Llantas de aluminio de doble pared</li>
+            </ul>
+            <p class="precio"><b>Precio: </b>$449.99</p>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="producto" onclick="mostrarDetalle(this)">
+            <img src="imagen8.jpg" alt="Bicicleta BMX Kink Gap XL">
+            <h3>Bicicleta BMX Kink Gap XL</h3>
+            <h4>Características</h4>
+            <ul>
+                <li>Cuadro de acero Hi-Ten</li>
+                <li>Horquilla de acero Hi-Ten</li>
+                <li>Manillar de 9.25" de altura</li>
+                <li>Ruedas de 20 pulgadas</li>
+            </ul>
+            <p class="precio"><b>Precio: </b>$469.99</p>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="producto" onclick="mostrarDetalle(this)">
+            <img src="imagen9.jpg" alt="Bicicleta BMX Subrosa Letum 2022">
+            <h3>Bicicleta BMX Subrosa Letum 2022</h3>
+            <h4>Características</h4>
+            <ul>
+                <li>Cuadro de acero cromoly</li>
+                <li>Horquilla de acero cromoly</li>
+                <li>Manillar de 9" de altura</li>
+                <li>Ruedas de 20 pulgadas</li>
+            </ul>
+            <p class="precio"><b>Precio: </b>$499.99</p>
+        </div>
+
+        <!-- Producto 10 -->
+        <div class="producto" onclick="mostrarDetalle(this)">
+            <img src="imagen10.jpg" alt="Bicicleta BMX Subrosa Altus">
+            <h3>Bicicleta BMX Subrosa Altus</h3>
+            <h4>Características</h4>
+            <ul>
+                <li>Cuadro de acero Hi-Ten</li>
+                <li>Horquilla de acero Hi-Ten</li>
+                <li>Manillar de 9" de altura</li>
+                <li>Ruedas de 20 pulgadas</li>
+            </ul>
+            <p class="precio"><b>Precio: </b>$549.99</p>
+        </div>
+    </div>
+</div>
+<div class="seccionProducto">
+            <h2>Refacciones para BMX</h2>
+            <div class="listaProductos">
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="imagen11.jpg" >
+                    </div>
+                    <h3>Llantas para BMX</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Material resistente</li>
+                        <li>Diseño específico para BMX</li>
+                        <li>Excelente agarre</li>
+                    </ul>
+                    <p class="precio"><b>Precio: </b></p>
+                </div>
+
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="imagen12.jpg" >
+                    </div>
+                    <h3>Aros para BMX</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Material ligero y duradero</li>
+                        <li>Diseño aerodinámico</li>
+                        <li>Compatibilidad con neumáticos de BMX</li>
+                    </ul>
+                    <p class="precio"><b>Precio: </b></p>
+                </div>
+
+                <!-- Continúa agregando más productos -->
+                <!-- Continúa agregando más productos -->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="imagen13.jpg" >
+                    </div>
+                    <h3>Manubrios para BMX</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Material resistente y liviano</li>
+                        <li>Diseño ergonómico para mayor comodidad</li>
+                        <li>Opciones de altura y anchura ajustables</li>
+                    </ul>
+                    <p class="precio"><b>Precio: </b></p>
+                </div>
+
+                <!-- Agrega más productos aquí -->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="imagen14.jpg" >
+                    </div>
+                    <h3>Cuadros para BMX</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Material de alta resistencia</li>
+                        <li>Diseño aerodinámico y ligero</li>
+                        <li>Compatibilidad con varios tamaños de rueda</li>
+                    </ul>
+                    <p class="precio"><b>Precio: </b></p>
+                </div>
+
+                <!-- Agrega más productos aquí -->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="imagen15.jpg" >
+                    </div>
+                    <h3>Tijeras para BMX</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Material de alta resistencia</li>
+                        <li>Diseño específico para BMX</li>
+                        <li>Compatibilidad con varios modelos de bicicleta</li>
+                    </ul>
+                    <p class="precio"><b>Precio: </b></p>
+                </div>
+
+                <!-- Agrega más productos aquí -->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="imagen16.jpg" >
+                    </div>
+                    <h3>Rines para BMX</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Material ligero y duradero</li>
+                        <li>Diseño específico para BMX</li>
+                        <li>Resistencia a impactos y saltos</li>
+                    </ul>
+                    <p class="precio"><b>Precio: </b></p>
+                </div>
+
+                <!-- Agrega más productos aquí -->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="imagen17.jpg" >
+                    </div>
+                    <h3>Baleros para BMX</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Alta resistencia a la fricción y la corrosión</li>
+                        <li>Diseño específico para BMX</li>
+                        <li>Mejora del rendimiento y la velocidad</li>
+                    </ul>
+                    <p class="precio"><b>Precio: </b></p>
+                </div>
+
+                <!-- Agrega más productos aquí -->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="imagen18.jpg" >
+                    </div>
+                    <h3>Calcas para BMX</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Diseños variados y personalizables</li>
+                        <li>Material resistente al agua y la intemperie</li>
+                        <li>Fácil aplicación y remoción</li>
+                    </ul>
+                    <p class="precio"><b>Precio: </b></p>
+                </div>
+
+                <!-- Agrega más productos aquí -->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="imagen19.jpg" >
+                    </div>
+                    <h3>Cadenas para BMX</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Material resistente a la tracción y la corrosión</li>
+                        <li>Diseño específico para BMX</li>
+                        <li>Compatibilidad con diferentes sistemas de transmisión</li>
+                    </ul>
+                    <p class="precio"><b>Precio: </b></p>
+                </div>
+
+                <!-- Agrega más productos aquí -->
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="imagen20.jpg" >
+                    </div>
+                    <h3>Puños para BMX</h3>
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Material antideslizante y confortable al tacto</li>
+                        <li>Diseño ergonómico para mayor agarre y control</li>
+                        <li>Fácil instalación y ajuste</li>
+                    </ul>
+                    <p class="precio"><b>Precio: </b></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+	let productos = document.querySelectorAll(".producto");
+	productos.forEach(producto => {
+   		 producto.addEventListener("click", () => mostrarDetalle(producto));
+	});
+
+        function mostrarDetalle(producto) {
+            // Obtener los detalles del producto
+            var nombre = producto.querySelector('h3').textContent;
+            var caracteristicas = producto.querySelector('ul').innerHTML;
+            var precio = producto.querySelector('.precio').textContent;
+            var imagenSrc = producto.querySelector('img').src;
+
+            // Almacenar detalles en sessionStorage para mostrar en la página de detalle
+            sessionStorage.setItem('nombreProducto', nombre);
+            sessionStorage.setItem('caracteristicasProducto', caracteristicas);
+            sessionStorage.setItem('precioProducto', precio);
+            sessionStorage.setItem('imagenProducto', imagenSrc);
+
+            // Redirigir a la página de detalle
+            window.location.href = "detalle_producto.html";
+        }
+    </script>
+
+        <footer style ="margin-top:5000px";>
+        <div class="elemento-footer">
+            
+        </div>
+        
+        <p>Gracias por usar JAZ BMX </p>
+        <p>JAZ BMX 2024, todos los derechos reservado</p>
+    </footer style>
+        
+    
+</body>
+</html>

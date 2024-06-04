@@ -1,0 +1,13 @@
+#mostrar-producto {
+	background: #43403F;
+	color: white;
+	width: 300px;
+	heigth: 600px;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
